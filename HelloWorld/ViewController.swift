@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var someLabel: UILabel!
+    
+    
+    @IBAction func btnClicked(sender: AnyObject) {
+        someLabel.text = "You have clicked the button"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
